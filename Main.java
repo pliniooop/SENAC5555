@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double salario, bonus;
+        int anos;
+
+        System.out.print("Digite o salário: ");
+        salario = scanner.nextDouble();
+
+        System.out.print("Digite os anos de trabalho na empresa: ");
+        anos = scanner.nextInt();
+
+        if (anos >= 5) {
+            bonus = salario * 0.20;
+        } else {
+            bonus = salario * 0.10;
+        }
+
+        System.out.println("O valor do bônus é: " + bonus);
+
+        scanner.close();
+    }
+}
