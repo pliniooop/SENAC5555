@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double altura;
+        char sexo;
+        double pesoIdeal;
+
+        System.out.print("Digite a altura: ");
+        altura = scanner.nextDouble();
+
+        System.out.print("Digite o sexo (M ou F): ");
+        sexo = scanner.next().charAt(0);
+
+        if (sexo == 'M' || sexo == 'm') {
+            pesoIdeal = (72.7 * altura) - 58;
+        } else {
+            pesoIdeal = (62.1 * altura) - 44.7;
+        }
+
+        System.out.println("Peso ideal: " + pesoIdeal);
+
+        scanner.close();
+    }
+}
