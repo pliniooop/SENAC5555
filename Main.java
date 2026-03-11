@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
+    int idade;
+
+    System.out.print("Digite a idade: ");
+    idade = scanner.nextInt();
+
+    if (idade >= 18) {
+      System.out.println("maior de idade");
+    } else {
+      System.out.println("menor de idade");
+    }
+
+    scanner.close();
+  }
+}
